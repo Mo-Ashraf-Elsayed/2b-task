@@ -1,0 +1,11 @@
+<div class="toast-container">
+    @for (item of toasts; track $index) {
+    <div class="toast" [class]="{
+        'success':item.type === 'success',
+        'error':item.type === 'error',
+    }">
+        <span class="message">{{ item.message }}</span>
+        <button class="close-btn" (click)="closeToast(item.id)">×</button>
+    </div>
+    }
+</div>

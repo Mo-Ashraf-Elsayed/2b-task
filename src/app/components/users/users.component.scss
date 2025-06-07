@@ -1,4 +1,8 @@
-table {
-  max-width: 100%;
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+  color: var(--text-color) !important;
+}
+.mat-mdc-header-row {
   color: var(--text-color) !important;
 }

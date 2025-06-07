@@ -1,0 +1,13 @@
+<nav>
+    <div class="nav-container">
+        <a routerLink="/users"><img src="./2b_logo_new.svg" alt></a>
+        <button class="dark-mode-btn"
+            (click)="toggleDarkMode()">
+            @if(!isDarkMode()){
+            Dark Mode
+            }@else if(isDarkMode()) {
+            Light Mode
+            }
+        </button>
+    </div>
+</nav>

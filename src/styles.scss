@@ -15,6 +15,8 @@ body {
   --mat-table-row-item-label-text-color: var(--text-color);
   --bg-dark-mode-btn: #222;
   --text-dark-mode-btn: #faf9fd;
+  --navbar-bg-color: #eee;
+  --user-card-shadow-color: rgba(0, 0, 0, 0.08);
 }
 .dark {
   --mat-table-background-color: #222;
@@ -23,6 +25,8 @@ body {
   --mat-table-row-item-label-text-color: white;
   --bg-dark-mode-btn: #faf9fd;
   --text-dark-mode-btn: #222;
+  --navbar-bg-color: rgb(76, 76, 76);
+  --user-card-shadow-color: rgba(255, 255, 255, 0.08);
 }
 .loader {
   width: 60px;
@@ -49,8 +53,6 @@ body {
 }
 .sec-container {
   min-height: 100vh;
-  width: 90%;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,13 +81,6 @@ body {
   border-radius: 5px;
   padding: 0.3rem;
 }
-.dark-mode-btn {
-  border: none;
-  border-radius: 5px;
-  padding: 0.3rem;
-  background-color: var(--bg-dark-mode-btn);
-  color: var(--text-dark-mode-btn);
-  position: fixed;
-  top: 20px;
-  right: 50px;
+button {
+  cursor: pointer;
 }

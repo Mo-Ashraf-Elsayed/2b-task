@@ -1,0 +1,19 @@
+nav {
+  padding: 2rem 0;
+  box-sizing: border-box;
+  background-color: var(--navbar-bg-color);
+  .nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .dark-mode-btn {
+      border: none;
+      border-radius: 5px;
+      padding: 0.3rem;
+      background-color: var(--bg-dark-mode-btn);
+      color: var(--text-dark-mode-btn);
+      font-weight: bold;
+    }
+  }
+}

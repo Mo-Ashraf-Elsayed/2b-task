@@ -2,10 +2,34 @@
     @if(loading){
     <span class="loader"></span>
     }@else {
-    <div class="user">
-        <h1 class="info">{{userData.name + "'s Data"}}</h1>
-        <div class="user-card">
+    <div class="user-card">
+        <div class="user-header">
+            <h2>{{ userData.name }}</h2>
+            <p class="username">{{ userData.username }}</p>
+        </div>
 
+        <div class="user-section">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:{{ userData.email }}">{{ userData.email
+                    }}</a></p>
+            <p>Phone: {{ userData.phone }}</p>
+            <p>Website: <a href="https://{{ userData.website }}"
+                    target="_blank">{{ userData.website }}</a></p>
+        </div>
+
+        <div class="user-section">
+            <h3>Address</h3>
+            <p>{{ userData.address.street }}, {{ userData.address.suite }}</p>
+            <p>{{ userData.address.city }} - {{ userData.address.zipcode }}</p>
+            <p>Lat: {{ userData.address.geo.lat }}, Lng: {{
+                userData.address.geo.lng }}</p>
+        </div>
+
+        <div class="user-section">
+            <h3>Company</h3>
+            <p>Name: {{ userData.company.name }}</p>
+            <p class="italic">"{{ userData.company.catchPhrase }}"</p>
+            <p>Field: {{ userData.company.bs }}</p>
         </div>
     </div>
     }
